@@ -1,0 +1,24 @@
+Welcome
+curl http://localhost:8080
+
+List films
+curl http://localhost:8080/films
+
+List Limited attributes of customers
+curl http://localhost:8080/customer
+
+List by rating
+curl http://localhost:8080/films/ratings/PG-13
+
+List by category
+curl http://localhost:8080/films/categories/New
+
+Find Detail of a single film
+curl http://localhost:8080/films/titles/Wyoming%20Storm
+
+Post Comment:
+curl -X POST http://localhost:8080/films/comment --data '{"Comment": "hello nadsid", "customerId":599, "FilmID":1000}'
+curl http://localhost:8080/films/comment --data '{"Comment": "hello", "customerId":1, "FilmID":1}'
+
+Fetch Comment:
+curl http://localhost:8080/films/5991000/comment/1000
